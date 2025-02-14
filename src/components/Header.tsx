@@ -10,7 +10,7 @@ function Header() {
       {/* Animated Dropdown Menu */}
       <div className={clsx(
         "z-10 top-[93.6px] right-0 mx-auto absolute flex justify-center w-full transition-transform duration-500 ease-in-out origin-top",
-        isOpen ? "scale-y-100 opacity-100" : "scale-y-0 opacity-0"
+        isOpen ? "scale-y-100 opacity-100" : "scale-y-1 opacity-0"
       )}>
         <nav className="-mt-4 py-6 flex rounded-b-3xl flex-col gap-6 items-center w-[calc(100%-24px)] bg-white border-b border-x border-zinc-800">
           <a
