@@ -3,14 +3,14 @@ import * as motion from "motion/react-client";
 
 function Hero() {
   return (
-    <section className=" w-4/5 mx-auto  flex mt-40 mb-36 justify-center text-zinc-900 relative overflow-clip">
+    <section className=" w-4/5 mx-auto  flex mt-40 mb-32 justify-center text-zinc-900 relative overflow-clip">
       <img
         src="../grid.svg"
         alt=""
         className="w-full absolute opacity-15 -mt-10"
       />
       <div className="w-full flex justify-center z-20 bg-radial from-transparent from-10% to-white">
-        <div className="my-auto py-16 text-left ">
+        <div className="my-auto py-18 text-left ">
           <motion.div
             className="flex flex-col"
             initial={{ opacity: 0, scale: 0 }}
@@ -33,10 +33,12 @@ function Hero() {
               clean code.
             </p>
             <div className="flex flex-1 justify-center gap-4">
-              <button className="bg-zinc-800 hover:bg-zinc-900 text-white px-6 py-4 rounded-full font-semibold transition-colors">
+              <button className="overflow-clip relative bg-zinc-800 text-white px-6 py-4 rounded-full font-semibold group hover:shadow-lg hover:-translate-y-1 hover:shadow-zinc-300 transition-transform duration-300 ease-in-out">
+              {/* <div className="absolute -translate-x-10 bottom-2 left-4 rounded-full bg-gradient-to-br from-sky-300 from-10%  to-emerald-300 to-90% h-4 w-4 group-hover:translate-x-0 transition-transform duration-500 ease-in-out"></div>
+              <div className="absolute translate-x-10 top-2 right-4 rounded-full bg-gradient-to-br from-sky-300 from-10%  to-emerald-300 to-90% h-4 w-4 group-hover:translate-x-0 transition-transform duration-500 ease-in-out"></div> */}
                 Projects
               </button>
-              <button className="bg-white border border-zinc-800 text-zinc-800 hover:bg-zinc-800 hover:text-white px-6 py-4 rounded-full font-semibold transition-colors">
+              <button className="bg-white border border-zinc-800 text-zinc-800 px-6 py-4 rounded-full font-semibold hover:shadow-lg hover:-translate-y-1 hover:shadow-zinc-300 transition-transform duration-300 ease-in-out">
                 Contact
               </button>
             </div>
