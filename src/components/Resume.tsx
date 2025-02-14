@@ -1,6 +1,6 @@
 function Resume() {
   return (
-    <section id="resume" className=" w-4/5 mx-auto bg-sk flex flex-col my-20 justify-center text-zinc-900">
+    <section id="resume" className=" w-4/5 mx-auto bg-sk flex flex-col py-40 justify-center text-zinc-900">
       <div className="w-full rounded-3xl border border-zinc-800  sm:flex  sm:justify-between  sm:items-start p-4">
         <div className="flex-1 my-auto">
           <h1 className="text-5xl font-base text-center">Resume</h1>
