@@ -13,7 +13,7 @@ function Projects() {
   return (
     <section className=" w-4/5 mx-auto bg-sk flex flex-col my-20 justify-center text-zinc-900">
       <h1 className="text-5xl font-base mb-10">Projects</h1>
-      <div className="flex gap-8">
+      <div className="sm:flex sm:gap-8 space-y-8 sm:space-y-0">
         {/* <div className="rounded-3xl w-96 bg-zinc-100 p-4 border border-zinc-800">
           <div className="relative overflow-clip rounded-xl border border-zinc-800">
           <span className="absolute inset-0 bg-white/70 backdrop-blur-lg mask-gradient"></span>

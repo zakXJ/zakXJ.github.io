@@ -10,7 +10,7 @@ function CardProject({ img, logo, color }: CardProjectProps) {
   return (
     <div
       className={clsx(
-        "rounded-3xl w-1/3  p-4 border border-zinc-800",
+        "rounded-3xl sm:w-1/3 p-4 border border-zinc-800",
         color || "bg-zinc-100"
       )}
     >

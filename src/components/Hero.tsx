@@ -3,14 +3,14 @@ import * as motion from "motion/react-client";
 
 function Hero() {
   return (
-    <section className=" w-4/5 mx-auto  flex mt-40 mb-32 justify-center text-zinc-900 relative overflow-clip">
+    <section className="md:w-4/5 w-11/12 mx-auto  flex mt-40 mb-32 justify-center text-zinc-900 relative overflow-clip">
       <img
         src="../grid.svg"
         alt=""
         className="w-full absolute opacity-15 -mt-10"
       />
       <div className="w-full flex justify-center z-20 bg-radial from-transparent from-10% to-white">
-        <div className="my-auto py-18 text-left ">
+        <div className="my-auto py-18 text-left w-full">
           <motion.div
             className="flex flex-col"
             initial={{ opacity: 0, scale: 0 }}
@@ -23,11 +23,11 @@ function Hero() {
           >
             <h1 className="text-5xl text-center font-bold mb-6 animate-fade-in">
               Hi, I'm &nbsp;
-              <span className="bg-gradient-to-r from-green-300 from-10% via-sky-300 via-30% to-emerald-400 to-90% inline-block text-white rounded-3xl px-5 py-2 animate-gradient">
+              <span className="mt-4 sm:mt-0 bg-gradient-to-r from-green-300 from-10% via-sky-300 via-30% to-emerald-400 to-90% inline-block text-white rounded-3xl px-5 py-2 animate-gradient">
                 Zakaria
               </span>
             </h1>
-            <p className="text-xl text-zinc-800 mb-8 w-2xl text-center">
+            <p className="mx-auto text-xl text-zinc-800 mb-8 md:w-2xl text-center">
               Full Stack Developer | Problem Solver . I create beautiful and
               functional web applications with a focus on user experience and
               clean code.
