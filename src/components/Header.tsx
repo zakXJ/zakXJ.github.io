@@ -14,7 +14,7 @@ function Header() {
       )}>
         <nav className="-mt-4 py-6 flex rounded-b-3xl flex-col gap-6 items-center w-[calc(100%-24px)] bg-white border-b border-x border-zinc-800">
           <a
-            href="#"
+            href="#projects"
             className="relative p-2 text-black text-xl overflow-hidden group"
           >
             <span className="absolute inset-0 bg-sky-200 scale-x-0 origin-left transition-transform duration-400 ease-out group-hover:scale-x-100"></span>
@@ -22,7 +22,7 @@ function Header() {
           </a>
 
           <a
-            href="#"
+            href="#skills"
             className="relative p-2 text-black text-xl overflow-hidden group"
           >
             <span className="absolute inset-0 bg-sky-200 scale-x-0 origin-left transition-transform duration-400 ease-out group-hover:scale-x-100"></span>
@@ -30,7 +30,7 @@ function Header() {
           </a>
 
           <a
-            href="#"
+            href="#resume"
             className="relative p-2 text-black text-xl overflow-hidden group"
           >
             <span className="absolute inset-0 bg-sky-200 scale-x-0 origin-left transition-transform duration-400 ease-out group-hover:scale-x-100"></span>
@@ -85,7 +85,7 @@ function Header() {
       <div className="hidden sm:block">
         <nav className="flex gap-6 items-center">
           <a
-            href="#"
+            href="#projects"
             className="relative p-2 text-black text-xl overflow-hidden group"
           >
             <span className="absolute inset-0 bg-sky-200 scale-x-0 origin-left transition-transform duration-400 ease-out group-hover:scale-x-100"></span>
@@ -93,7 +93,7 @@ function Header() {
           </a>
 
           <a
-            href="#"
+            href="#skills"
             className="relative p-2 text-black text-xl overflow-hidden group"
           >
             <span className="absolute inset-0 bg-sky-200 scale-x-0 origin-left transition-transform duration-400 ease-out group-hover:scale-x-100"></span>
@@ -101,7 +101,7 @@ function Header() {
           </a>
 
           <a
-            href="#"
+            href="#resume"
             className="relative p-2 text-black text-xl overflow-hidden group mr-4"
           >
             <span className="absolute inset-0 bg-sky-200 scale-x-0 origin-left transition-transform duration-400 ease-out group-hover:scale-x-100"></span>

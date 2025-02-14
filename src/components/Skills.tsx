@@ -1,6 +1,6 @@
 function Skills() {
   return (
-    <section className=" w-4/5 mx-auto bg-sk flex flex-col my-20 justify-center text-zinc-900">
+    <section id="skills" className=" w-4/5 mx-auto bg-sk flex flex-col py-36 justify-center text-zinc-900">
       <h1 className="text-5xl font-base mb-10">Skills</h1>
       <div className="grid sm:grid-cols-2 gap-8">
         <div className="relative overflow-clip bg-teal-100 py-16 rounded-3xl border border-zinc-800 group">

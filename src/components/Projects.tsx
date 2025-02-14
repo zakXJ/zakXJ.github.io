@@ -11,7 +11,7 @@ function Projects() {
         <CardProject img={project.img} logo={project.logo} color={project.color}/>
       );
   return (
-    <section className=" w-4/5 mx-auto bg-sk flex flex-col my-20 justify-center text-zinc-900">
+    <section id="projects" className=" w-4/5 mx-auto flex flex-col py-36 justify-center text-zinc-900">
       <h1 className="text-5xl font-base mb-10">Projects</h1>
       <div className="sm:flex sm:gap-8 space-y-8 sm:space-y-0">
         {/* <div className="rounded-3xl w-96 bg-zinc-100 p-4 border border-zinc-800">
