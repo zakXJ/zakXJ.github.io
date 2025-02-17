@@ -1,6 +1,5 @@
 import * as motion from "motion/react-client";
 
-
 function Hero() {
   return (
     <section className="md:w-4/5 w-11/12 mx-auto  flex mt-40 mb-32 justify-center text-zinc-900 relative overflow-clip">
@@ -19,7 +18,6 @@ function Hero() {
               duration: 0.2,
               scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
             }}
-            
           >
             <h1 className="text-5xl text-center font-bold mb-6 animate-fade-in">
               Hi, I'm &nbsp;
@@ -33,24 +31,21 @@ function Hero() {
               clean code.
             </p>
             <div className="flex flex-1 justify-center gap-4">
-              <button className="overflow-clip relative bg-zinc-800 text-white px-6 py-4 rounded-full font-semibold group hover:shadow-lg hover:-translate-y-1 hover:shadow-zinc-300 transition-transform duration-300 ease-in-out">
-              {/* <div className="absolute -translate-x-10 bottom-2 left-4 rounded-full bg-gradient-to-br from-sky-300 from-10%  to-emerald-300 to-90% h-4 w-4 group-hover:translate-x-0 transition-transform duration-500 ease-in-out"></div>
-              <div className="absolute translate-x-10 top-2 right-4 rounded-full bg-gradient-to-br from-sky-300 from-10%  to-emerald-300 to-90% h-4 w-4 group-hover:translate-x-0 transition-transform duration-500 ease-in-out"></div> */}
+              <a
+                href="#projects"
+                className="bg-zinc-800 text-white px-6 py-4 rounded-full font-semibold hover:shadow-lg hover:-translate-y-1 hover:shadow-zinc-300 transition-transform duration-300 ease-in-out"
+              >
                 Projects
-              </button>
-              <button className="bg-white border border-zinc-800 text-zinc-800 px-6 py-4 rounded-full font-semibold hover:shadow-lg hover:-translate-y-1 hover:shadow-zinc-300 transition-transform duration-300 ease-in-out">
+              </a>
+              <a
+                href="mailto:xj3.zak@gmail.com"
+                className="bg-white border border-zinc-800 text-zinc-800 px-6 py-4 rounded-full font-semibold hover:shadow-lg hover:-translate-y-1 hover:shadow-zinc-300 transition-transform duration-300 ease-in-out"
+              >
                 Contact
-              </button>
+              </a>
             </div>
           </motion.div>
         </div>
-        {/*  <div className="flex-1">
-                  <div className="h-[500px] border border-zinc-800 w-full bg-sky-200 rounded-3xl p-4">
-                    <div className="bg-white border border-zinc-800 w-full h-full rounded-2xl">
-                    
-                    </div>
-                  </div>
-            </div> */}
       </div>
     </section>
   );

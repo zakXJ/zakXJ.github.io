@@ -9,9 +9,9 @@ function Footer() {
                     <p className="text-base font-normal mb-6">
                       Let's work together to create something amazing.
                     </p>
-                    <button className="mx-auto w-fit bg-white text-zinc-900 px-6 py-4 rounded-full font-semibold transition-colors">
+                    <a href="mailto:xj3.zak@gmail.com" className="mx-auto w-fit bg-white text-zinc-900 px-6 py-4 rounded-full font-semibold hover:shadow-lg hover:-translate-y-1 hover:shadow-zinc-700 transition-transform duration-300 ease-in-out">
                         Hire Me
-                    </button>
+                    </a>
                 </div>
             </div>
             <div className="pb-6">

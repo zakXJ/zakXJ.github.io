@@ -4,9 +4,10 @@ interface CardProjectProps {
   img: string;
   logo: string;
   color?: string;
+  width?: string;
 }
 
-function CardProject({ img, logo, color }: CardProjectProps) {
+function CardProject({ img, logo, color, width }: CardProjectProps) {
   return (
     <div
       className={clsx(
@@ -14,25 +15,7 @@ function CardProject({ img, logo, color }: CardProjectProps) {
         color || "bg-zinc-100"
       )}
     >
-      {/* <h1 className="text-5xl font-bold mb-6 animate-fade-in">
-                        Projects
-                    </h1> */}
-      {/* <div className="relative overflow-clip rounded-xl border border-zinc-800">
-            <img
-              src={`../images/projects/${img}`}
-              className="blur-sm w-fit object-cover"
-              alt=""
-            />
-            <div className="absolute h-full flex items-center justify-center top-1/2 -translate-y-1/2 bg-white/70">
-              <img
-                
-                src={`../images/projects/${logo}`}
-                className="w-fit scale-75"
-                alt=""
-              />
-            </div>
-          </div> */}
-      <div className="relative overflow-clip rounded-xl border border-zinc-800">
+      <div className="relative  overflow-clip rounded-xl border border-zinc-800">
         <span className="absolute inset-0 bg-white/70 backdrop-blur-lg mask-gradient"></span>
         <img
           src={`../images/projects/${img}`}
@@ -41,19 +24,19 @@ function CardProject({ img, logo, color }: CardProjectProps) {
         />
         <img
           src={`../images/projects/${logo}`}
-          className="absolute w-fit scale-75 bottom-0 mb-2"
+          className={clsx(
+            "absolute right-1/2 translate-x-1/2 bottom-0 mb-6",
+            width || "w-2/3"
+          )}
           alt=""
         />
+        
       </div>
-
-      {/* <p className="text-xl text-zinc-800 mb-6 pt-4">
-                        Here are some of the projects I have worked on. I am always looking for new and exciting projects to work on.
-                    </p> */}
-      <div className="flex flex-1 justify-center gap-4 mt-6">
+      {/* <div className="flex flex-1 justify-center gap-4 mt-6">
         <button className="bg-white border border-zinc-800 text-zinc-800 hover:bg-zinc-800 hover:text-white px-6 py-4 rounded-full font-semibold transition-colors">
           See Projects
         </button>
-      </div>
+      </div> */}
     </div>
   );
 }
