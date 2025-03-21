@@ -3,7 +3,7 @@ import CardProject from "./CardProject";
 const projects = [
     { img: 'shero.png', logo: 'shero-logo.svg', color:'bg-yellow-800/20' },
     { img: 'mmik.png', logo: 'mmik-logo.svg', color:'bg-sky-600/20' },
-    { img: 'binary01.png', logo: 'binary01-logo.svg', color:'bg-zinc-600/20', width: 'w-1/3' },
+    { img: 'binary01.png', logo: 'binary01-logo.svg', color:'bg-purple-600/20', width: 'w-1/3' },
   ];
 
 function Projects() {
