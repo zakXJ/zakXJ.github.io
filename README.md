@@ -38,11 +38,6 @@ Chronological overview of my professional experience including:
 - Roles and responsibilities
 - Time periods and achievements
 
-### Contact
-Multiple ways to connect with me, including:
-- Email address
-- Social media links
-
 ## 💻 Technologies Used
 - HTML5/CSS3
 - JavaScript
