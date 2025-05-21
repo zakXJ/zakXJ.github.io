@@ -1,16 +1,54 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend&display=swap");
 @import "tailwindcss";
-@theme {
+
+:root {
+    /* Base variables: light mode and non-color-scheme dependent */
     --font-display: "Lexend", "sans-serif";
     --breakpoint-3xl: 1920px;
+
     --color-avocado-100: oklch(0.99 0 0);
     --color-avocado-200: oklch(0.98 0.04 113.22);
     --color-avocado-300: oklch(0.94 0.11 115.03);
     --color-avocado-400: oklch(0.92 0.19 114.08);
     --color-avocado-500: oklch(0.84 0.18 117.33);
     --color-avocado-600: oklch(0.53 0.12 118.34);
+    
     --ease-fluid: cubic-bezier(0.3, 0, 0, 1);
     --ease-snappy: cubic-bezier(0.2, 0, 0, 1);
+    
+    --inset-shadow-md: inset 0 8px 16px rgba(0, 0, 0, 0.1); /* Adjusted shadow for light mode */
+
+    --animate-wiggle: wiggle 1s ease-in-out infinite;
+    --animate-gradient: gradient 6s ease infinite alternate;
+}
+
+/* Dark mode overrides */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-avocado-100: oklch(0.15 0.02 113.22); /* Adjusted dark base */
+        --color-avocado-200: oklch(0.20 0.04 113.22);
+        --color-avocado-300: oklch(0.25 0.09 115.03); /* Adjusted saturation for darker bg */
+        --color-avocado-400: oklch(0.30 0.15 114.08); /* Adjusted saturation for darker bg */
+        --color-avocado-500: oklch(0.35 0.18 117.33);
+        --color-avocado-600: oklch(0.75 0.12 118.34); /* Lighter for text/accent on dark */
+
+        /* Consider adjusting shadows for dark mode if needed */
+        --inset-shadow-md: inset 0 8px 16px rgba(0, 0, 0, 0.5); /* Darker shadow for dark mode */
+    }
+}
+
+/* Tailwind @theme directive if still needed for specific Tailwind plugin functionality,
+   but generally, variables in :root are accessible.
+   If @theme is for Astro's specific theming that works with Tailwind,
+   then only non-CSS standard variables or config specific to that system should be here.
+   For now, assuming standard CSS variables are preferred.
+   The original @theme block contained duplicates of :root variables.
+   Let's remove the duplicated @theme blocks and only keep one if it serves a distinct purpose.
+   Given the simplicity of the config, it's likely not needed if all variables are in :root.
+*/
+
+/* Keyframes are defined globally, not inside @theme or :root */
+@keyframes wiggle {
     /* ... */
 
     --inset-shadow-md: inset 0 8px 16px rgba(0, 0, 0, 1); 
@@ -40,20 +78,20 @@
       }
 
     /* @keyframes gradient {
-        0% { 
-            background-position: 0% 50%; 
+        0% {
+            background-position: 0% 50%;
         }
-        50% { 
-            background-position: 100% 50%; 
+        50% {
+            background-position: 100% 50%;
         }
-        100% { 
-            background-position: 0% 50%; 
+        100% {
+            background-position: 0% 50%;
         }
     } */
 }
 
 /* .folder {
-    clip-path: polygon(49% 42%, 60% 65%, 100% 65%, 100% 100%, 0 100%, 0 42%);      
+    clip-path: polygon(49% 42%, 60% 65%, 100% 65%, 100% 100%, 0 100%, 0 42%);
 } */
 .folder {
     clip-path: polygon( 0% 17.621%,0% 17.621%,0.154% 14.763%,0.6% 12.051%,1.313% 9.523%,2.27% 7.214%,3.446% 5.161%,4.817% 3.4%,6.358% 1.967%,8.046% 0.898%,9.856% 0.231%,11.765% 0%,38.279% 0%,38.279% 0%,39.54% 0.101%,40.773% 0.4%,41.969% 0.889%,43.117% 1.559%,44.21% 2.404%,45.238% 3.414%,46.193% 4.583%,47.064% 5.901%,47.844% 7.363%,48.524% 8.959%,52.065% 18.354%,52.065% 18.354%,52.744% 19.95%,53.524% 21.411%,54.396% 22.73%,55.35% 23.899%,56.378% 24.909%,57.471% 25.753%,58.62% 26.424%,59.815% 26.912%,61.048% 27.211%,62.31% 27.313%,88.235% 27.313%,88.235% 27.313%,90.144% 27.543%,91.954% 28.211%,93.642% 29.28%,95.183% 30.713%,96.554% 32.474%,97.73% 34.527%,98.687% 36.836%,99.4% 39.364%,99.846% 42.076%,100% 44.934%,100% 100%,0% 100%,0% 17.621% );
