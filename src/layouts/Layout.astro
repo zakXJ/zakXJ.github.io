@@ -3,6 +3,28 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
+		<script is:inline>
+			(function() {
+			  const theme = (() => {
+				if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+				  return localStorage.getItem('theme');
+				}
+				// Check for window.matchMedia to ensure it's available
+				if (typeof window !== 'undefined' && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+				  return 'dark';
+				}
+				return 'light';
+			  })();
+
+			  if (theme === 'dark') {
+				document.documentElement.classList.add('dark');
+			  } else {
+				// No need to explicitly remove 'dark' if it's not there by default,
+				// but good for ensuring a clean state if class was somehow added server-side.
+				document.documentElement.classList.remove('dark');
+			  }
+			})();
+		</script>
 		<link rel="icon" type="image/svg+xml" href="/favicon2.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Zak | Indie Dev</title>
