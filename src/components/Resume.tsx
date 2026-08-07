@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
+import resume from "../data/resume.json";
 
 function Resume() {
   const [currentUrl, setCurrentUrl] = useState('');
-  
+
   useEffect(() => {
     setCurrentUrl(window.location.href);
   }, []);
@@ -15,14 +16,14 @@ function Resume() {
         </div>
         <div className="flex-1 flex sm:justify-end justify-center mt-2 sm:mt-0">
             <a
-            href={ currentUrl.includes('dz') ? "https://drive.google.com/file/d/1XQBBAhwHzR7sMBbgebxhIoR-SpcobOGM/view?usp=sharing" : "https://drive.google.com/file/d/1UA0tjdh4eRdTBJKmObySYtCoyIOMND07/view?usp=sharing"}
+            href={ currentUrl.includes('dz') ? resume.cvUrlDZ : resume.cvUrl }
             className="relative w-fit bg-sky-300 p-4 rounded-3xl group cursor-pointer"
             target="_blank"
             rel="noopener noreferrer"
             >
             <div className="absolute top-4 rotate-0 bg-white aspect-[1.65/2] w-32 rounded-xl border border-zinc-200"></div>
             <div className="group-hover:-translate-y-10 transition-transform duration-500 ease-in-out rotate-[5deg] overflow-clip  z-10 shadow-lg shadow-zinc-800  bg-white aspect-[1.65/2] w-32 rounded-xl border border-zinc-200">
-              <img src={ currentUrl.includes('dz') ? `../cv2025DZ.png` : `../cv20252.png` } className="w-fit" alt="" />
+              <img src={ currentUrl.includes('dz') ? resume.cvImageDZ : resume.cvImage } className="w-fit" alt="" />
             </div>
 
             <div className=" inset-shadow-md inset-shadow-white bg-linear-to-t from-blue-300/90 to-white/90 folder w-full h-32 rounded-3xl absolute left-0 bottom-0"></div>

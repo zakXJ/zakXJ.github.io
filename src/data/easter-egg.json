@@ -1,0 +1,8 @@
+{
+  "apps": [
+    { "id": "terminal", "name": "Terminal", "icon": "terminal", "color": "bg-zinc-900" },
+    { "id": "gallery", "name": "Gallery", "icon": "image", "color": "bg-gradient-to-br from-pink-400 to-orange-300" },
+    { "id": "finder", "name": "Finder", "icon": "folder", "color": "bg-gradient-to-b from-blue-400 to-blue-600" },
+    { "id": "calendar", "name": "Calendar", "icon": "calendar", "color": "bg-white", "extraClass": "border border-zinc-300" }
+  ]
+}

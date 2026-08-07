@@ -1,0 +1,8 @@
+{
+  "name": "Zakaria",
+  "description": "Full Stack Developer | Problem Solver . I create beautiful and functional web applications with a focus on user experience and clean code.",
+  "buttons": [
+    { "href": "#projects", "label": "Projects", "variant": "primary" },
+    { "href": "mailto:xj3.zak@gmail.com", "label": "Contact", "variant": "secondary" }
+  ]
+}

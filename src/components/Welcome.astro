@@ -1,19 +1,8 @@
 ---
-import astroLogo from "../assets/astro.svg";
-import background from "../assets/background.svg";
-import Hero from "./Hero";
 import "../styles/global.css";
-import Header from "./Header";
-import Projects from "./Projects";
-import Footer from "./Footer";
-import Skills from "./Skills";
-import Resume from "./Resume";
+import AppContainer from "./AppContainer";
 ---
+
 <div class="font-display">
-    <Header client:load />
-    <Hero client:load />
-    <Projects />
-    <Skills />
-    <Resume client:load />
-    <Footer />
+    <AppContainer client:load />
 </div>
