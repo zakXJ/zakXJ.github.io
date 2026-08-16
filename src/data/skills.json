@@ -4,36 +4,36 @@
       "title": "Web developpement",
       "bgColor": "bg-teal-100",
       "logos": [
-        { "src": "HTML5.svg", "classes": "w-20 sm:w-28 absolute opacity-20 left-0 rotate-6 translate-y-48 group-hover:translate-y-8 transition-transform duration-500 ease-in-out" },
-        { "src": "CSS.svg", "classes": "w-14 sm:w-20 absolute opacity-20 sm:left-28 left-14 rotate-6 -translate-y-48 group-hover:-translate-y-16 transition-transform duration-500 ease-in-out" },
-        { "src": ".NET.svg", "classes": "w-20 sm:w-28 absolute opacity-20 right-0 -rotate-6 translate-y-48 group-hover:translate-y-8 transition-transform duration-500 ease-in-out" },
-        { "src": "Laravel.svg", "classes": "w-14 sm:w-20 absolute opacity-20 right-14 -rotate-6 -translate-y-48 group-hover:-translate-y-16 transition-transform duration-500 ease-in-out" }
+        { "src": "HTML5.svg", "classes": "w-20 sm:w-28 absolute opacity-20 left-0 rotate-6 translate-y-48 group-hover:translate-y-8 transition-transform duration-500 ease-in-out", "mobile": "w-14 absolute opacity-20 left-1 rotate-6 translate-y-20 group-hover:translate-y-10 transition-transform duration-500 ease-in-out" },
+        { "src": "CSS.svg", "classes": "w-14 sm:w-20 absolute opacity-20 sm:left-28 left-14 rotate-6 -translate-y-48 group-hover:-translate-y-16 transition-transform duration-500 ease-in-out", "mobile": "w-12 absolute opacity-20 left-16 rotate-6 -translate-y-24 group-hover:-translate-y-20 transition-transform duration-500 ease-in-out" },
+        { "src": ".NET.svg", "classes": "w-20 sm:w-28 absolute opacity-20 right-0 -rotate-6 translate-y-48 group-hover:translate-y-8 transition-transform duration-500 ease-in-out", "mobile": "w-14 absolute opacity-20 right-1 -rotate-6 translate-y-20 group-hover:translate-y-10 transition-transform duration-500 ease-in-out" },
+        { "src": "Laravel.svg", "classes": "w-14 sm:w-20 absolute opacity-20 right-14 -rotate-6 -translate-y-48 group-hover:-translate-y-16 transition-transform duration-500 ease-in-out", "mobile": "w-12 absolute opacity-20 right-16 -rotate-6 -translate-y-24 group-hover:-translate-y-10 transition-transform duration-500 ease-in-out" }
       ]
     },
     {
       "title": "Deployment",
       "bgColor": "bg-sky-100",
       "logos": [
-        { "src": "Nginx.svg", "classes": "w-32 sm:w-48 absolute opacity-20 left-5 rotate-6 translate-y-28 group-hover:translate-y-12 transition-transform duration-500 ease-in-out" },
-        { "src": "Githubactions.svg", "classes": "w-20 sm:w-24 absolute opacity-15 right-5 -rotate-6 -translate-y-48 group-hover:-translate-y-16 transition-transform duration-500 ease-in-out" }
+        { "src": "Nginx.svg", "classes": "w-32 sm:w-48 absolute opacity-20 left-5 rotate-6 translate-y-28 group-hover:translate-y-12 transition-transform duration-500 ease-in-out", "mobile": "w-24 absolute opacity-20 left-2 rotate-6 translate-y-16 group-hover:translate-y-16 transition-transform duration-500 ease-in-out" },
+        { "src": "Githubactions.svg", "classes": "w-20 sm:w-24 absolute opacity-15 right-5 -rotate-6 -translate-y-48 group-hover:-translate-y-16 transition-transform duration-500 ease-in-out", "mobile": "w-16 absolute opacity-15 right-2 -rotate-6 -translate-y-24 group-hover:-translate-y-10 transition-transform duration-500 ease-in-out" }
       ]
     },
     {
       "title": "Mobile developpement",
       "bgColor": "bg-zinc-100",
       "logos": [
-        { "src": "Flutter.png", "classes": "w-36 sm:w-52 absolute opacity-40 left-8 -rotate-6 -translate-y-48 group-hover:-translate-y-16 transition-transform duration-500 ease-in-out" },
-        { "src": "React.svg", "classes": "w-28 sm:w-44 absolute opacity-40 right-0 -rotate-6 translate-y-48 group-hover:translate-y-8 transition-transform duration-500 ease-in-out" }
+        { "src": "Flutter.png", "classes": "w-36 sm:w-52 absolute opacity-40 left-8 -rotate-6 -translate-y-48 group-hover:-translate-y-16 transition-transform duration-500 ease-in-out", "mobile": "w-24 absolute opacity-40 left-3 -rotate-6 -translate-y-24 group-hover:-translate-y-10 transition-transform duration-500 ease-in-out" },
+        { "src": "React.svg", "classes": "w-28 sm:w-44 absolute opacity-40 right-0 -rotate-6 translate-y-48 group-hover:translate-y-8 transition-transform duration-500 ease-in-out", "mobile": "w-20 absolute opacity-40 right-2 -rotate-6 translate-y-20 group-hover:translate-y-10 transition-transform duration-500 ease-in-out" }
       ]
     },
     {
       "title": "HealthTech",
       "bgColor": "bg-white",
       "logos": [
-        { "src": "GEHealthCare.svg", "classes": "w-40 sm:w-52 absolute opacity-20 left-2 -rotate-6 translate-y-28 group-hover:translate-y-10 transition-transform duration-500 ease-in-out" },
-        { "src": "dicom.png", "classes": "w-36 sm:w-52 absolute opacity-30 left-1/2 -translate-x-1/2 rotate-3 -translate-y-48 group-hover:-translate-y-16 transition-transform duration-500 ease-in-out" }
+        { "src": "GEHealthCare.svg", "classes": "w-40 sm:w-52 absolute opacity-20 left-2 -rotate-6 translate-y-28 group-hover:translate-y-10 transition-transform duration-500 ease-in-out", "mobile": "w-28 absolute opacity-20 left-1 -rotate-6 translate-y-16 group-hover:translate-y-10 transition-transform duration-500 ease-in-out" },
+        { "src": "dicom.png", "classes": "w-36 sm:w-52 absolute opacity-30 left-1/2 -translate-x-1/2 rotate-3 -translate-y-48 group-hover:-translate-y-16 transition-transform duration-500 ease-in-out", "mobile": "w-24 absolute opacity-30 left-1/2 -translate-x-1/2 rotate-3 -translate-y-24 group-hover:-translate-y-10 transition-transform duration-500 ease-in-out" }
       ],
-      "extra": { "text": "PACS", "classes": "absolute opacity-25 sm:right-8 right-4 rotate-6 translate-y-26 group-hover:translate-y-8 transition-transform duration-500 ease-in-out text-5xl sm:text-6xl" }
+      "extra": { "text": "PACS", "classes": "absolute opacity-25 sm:right-8 right-4 rotate-6 translate-y-26 group-hover:translate-y-8 transition-transform duration-500 ease-in-out text-5xl sm:text-6xl", "mobile": "absolute opacity-25 right-2 rotate-6 translate-y-16 group-hover:translate-y-10 transition-transform duration-500 ease-in-out text-4xl" }
     }
   ]
 }

@@ -1,7 +1,47 @@
 {
   "projects": [
-    { "img": "shero.png", "logo": "shero-logo.svg", "color": "bg-yellow-800/20" },
-    { "img": "mmik.png", "logo": "mmik-logo.svg", "color": "bg-sky-600/20" },
-    { "img": "binary01.png", "logo": "binary01-logo.svg", "color": "bg-purple-600/20", "width": "w-1/3" }
+    {
+      "img": "shero.png",
+      "logo": "shero-logo.svg",
+      "color": "bg-yellow-800/20",
+      "title": "Shero",
+      "description": "A modern showcase website developed for a language training school, designed to present its courses, training programs and educational offering through a clear and engaging digital experience. The website focuses on intuitive navigation, responsive design and strong visual communication, allowing prospective students to quickly discover available programs, learn about the school and get in touch with the organization."
+    },
+    {
+      "img": "mmik.png",
+      "logo": "mmik-logo.svg",
+      "color": "bg-sky-600/20",
+      "title": "MMik",
+      "description": "A professional corporate website developed for a construction and civil engineering company to showcase its expertise, services and completed projects. The design emphasizes the company's professional identity and technical capabilities while providing a responsive and intuitive experience across desktop and mobile. The website is structured to build trust with potential clients and partners through clear service presentation and project highlights."
+    },
+    {
+      "img": "binary01.png",
+      "logo": "binary01-logo.svg",
+      "color": "bg-gray-600/20",
+      "width": "w-1/3",
+      "title": "Binary01",
+      "description": "A comprehensive SaaS platform developed to centralize and streamline the management of a catering company. The application covers the entire operational workflow, from customer and event management to meal planning, logistics and invoicing. The platform provides a centralized workspace for managing catering operations, tracking orders and events, coordinating teams and monitoring business activities. Its responsive interface is designed to simplify day-to-day operations while providing management with a clear overview of ongoing and upcoming activities."
+    },
+    {
+      "img": "noema.png",
+      "logo": "noema-logo.svg",
+      "color": "bg-violet-600/20",
+      "title": "NOEMA / AI-powered Radiology Workflow",
+      "description": "NOEMA is an intelligent RIS/PACS platform designed to assist radiologists throughout the reporting workflow. It combines DICOM imaging, speech-to-text transcription and generative AI to transform dictated findings into structured, context-aware radiology reports.The platform integrates a DICOM viewer, radiologist worklists, voice dictation, report templates and an AI pipeline powered by medical language models. The architecture is designed to keep patient data and AI processing within a controlled medical environment while seamlessly integrating with existing imaging workflows."
+    },
+    {
+      "img": "pharmchaos.png",
+      "logo": "pharmchaos-logo.svg",
+      "color": "bg-teal-600/20",
+      "title": "PharmChaos / Hospital Inventory & Traceability",
+      "description": "PharmChaos is a hospital inventory management platform designed for pharmacies, operating rooms and clinical departments. It provides real-time stock management, product traceability and consumption tracking across the hospital. The platform manages medical devices and pharmaceutical products, supports stock initialization and inventory operations, and tracks consumption by department and operating room. A companion Android application extends the system to mobile workflows, allowing healthcare teams to record and monitor stock movements directly in the field."
+    },
+    {
+      "img": "synmed.png",
+      "logo": "synmed-logo.svg",
+      "color": "bg-orange-600/20",
+      "title": "Synmed / Healthcare Management SaaS",
+      "description": "Synmed is a multi-tenant SaaS platform designed to manage administrative and financial workflows for healthcare organizations. It centralizes conventions, products, billing documents and pricing rules within a unified system. The platform is built around a scalable architecture with isolated tenant databases, centralized authentication and asynchronous synchronization between services. It provides healthcare organizations with tools for managing quotes, requests, proforma invoices, invoices and complex third-party payment and coverage rules."
+    }
   ]
 }

@@ -1,8 +1,14 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
+import { useInView } from "motion/react";
 import resume from "../data/resume.json";
+import CvPreview from "./CvPreview";
 
 function Resume() {
   const [currentUrl, setCurrentUrl] = useState('');
+  const [isTouch] = useState(() => typeof window !== "undefined" && window.matchMedia("(hover: none)").matches);
+  const cardRef = useRef<HTMLAnchorElement>(null);
+  const inView = useInView(cardRef, { amount: 0.5 });
+  const active = isTouch && inView;
 
   useEffect(() => {
     setCurrentUrl(window.location.href);
@@ -16,14 +22,17 @@ function Resume() {
         </div>
         <div className="flex-1 flex sm:justify-end justify-center mt-2 sm:mt-0">
             <a
+            ref={cardRef}
             href={ currentUrl.includes('dz') ? resume.cvUrlDZ : resume.cvUrl }
             className="relative w-fit bg-sky-300 p-4 rounded-3xl group cursor-pointer"
             target="_blank"
             rel="noopener noreferrer"
             >
             <div className="absolute top-4 rotate-0 bg-white aspect-[1.65/2] w-32 rounded-xl border border-zinc-200"></div>
-            <div className="group-hover:-translate-y-10 transition-transform duration-500 ease-in-out rotate-[5deg] overflow-clip  z-10 shadow-lg shadow-zinc-800  bg-white aspect-[1.65/2] w-32 rounded-xl border border-zinc-200">
-              <img src={ currentUrl.includes('dz') ? resume.cvImageDZ : resume.cvImage } className="w-fit" alt="" />
+            <div className={`group-hover:-translate-y-10 ${active ? "-translate-y-10" : ""} transition-transform duration-500 ease-in-out rotate-[5deg] overflow-clip  z-10 shadow-lg shadow-zinc-800  bg-white aspect-[1.65/2] w-32 rounded-xl border border-zinc-200`}>
+              <div className="w-full h-full overflow-hidden bg-white p-1 text-[3px] leading-[1.3] text-zinc-900">
+                <CvPreview />
+              </div>
             </div>
 
             <div className=" inset-shadow-md inset-shadow-white bg-linear-to-t from-blue-300/90 to-white/90 folder w-full h-32 rounded-3xl absolute left-0 bottom-0"></div>

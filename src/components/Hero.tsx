@@ -7,7 +7,7 @@ function Hero() {
       <img
         src="/grid.svg"
         alt=""
-        className="w-full absolute opacity-15 -mt-10"
+        className="absolute inset-0 w-full h-full object-cover opacity-15"
       />
       <div className="w-full flex justify-center z-20 bg-radial from-transparent from-10% to-white">
         <div className="my-auto py-18 text-left w-full">
